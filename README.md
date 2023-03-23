@@ -10,12 +10,12 @@
  - [Cloud Functions](https://cloud.google.com/functions)
  - [Go](https://go.dev/)
  - [OpenAI](https://openai.com/)
- 
+
 ## 環境變數設定
 
 在本機開發時，請先設定好以下Line及OpenAI環境變數
 
-`LINE_CHANNEL_SECRET` 
+`LINE_CHANNEL_SECRET`
 `LINE_ACCESS_TOKEN`
 可以從[Line Console](https://developers.line.biz/console/)取得
 
@@ -49,7 +49,13 @@ Start the server
 ```
 
 
+## 怎麼開始玩？
+使用以下QR Code加入你的好友名單，就可以開始對話。
+
+![加入它](https://raw.githubusercontent.com/myrest/LineAdventure/main/LineAdventure.png)
+
+
+
 ## Authors
 
 - [Roy Tai](https://www.facebook.com/roy.tai.58)
-
