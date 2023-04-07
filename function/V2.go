@@ -13,18 +13,18 @@ func init() {
 	Adv_V2 = AdventureVersionSetting{
 		SystemPrompt: "你是一個故事接龍系統，以第三人的角度描述故事，每次產生故事的內容限制在100字以內。不要出現重複或類似的場景、對話，輸出的內容要連貫，要符合故事背景，如果場景中的人物在對話，請把對話內容完整輸出来，如果角色與場景中的任何生物、物品互動，請把互動過程詳細描述出來",
 		ChatCompletionRequestFirst: openai.ChatCompletionRequest{
-			Model:            openai.GPT3Dot5Turbo0301,
-			MaxTokens:        500,
-			Temperature:      1,
-			TopP:             1,
-			FrequencyPenalty: 2,
-			PresencePenalty:  2,
+			Model:       openai.GPT3Dot5Turbo0301,
+			MaxTokens:   500,
+			Temperature: 1,
+			TopP:        1,
+			// FrequencyPenalty: 2,
+			// PresencePenalty:  2,
 		},
 		ChatCompletionRequestNormal: openai.ChatCompletionRequest{
 			Model:       openai.GPT3Dot5Turbo0301,
 			MaxTokens:   500,
-			Temperature: 0.8,
-			TopP:        0.5,
+			Temperature: 1,
+			TopP:        1,
 		},
 	}
 }

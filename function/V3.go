@@ -24,8 +24,8 @@ func init() {
 		ChatCompletionRequestNormal: openai.ChatCompletionRequest{
 			Model:       openai.GPT3Dot5Turbo0301,
 			MaxTokens:   400,
-			Temperature: 0.7,
-			TopP:        0.5,
+			Temperature: 1,
+			TopP:        1,
 		},
 	}
 }

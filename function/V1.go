@@ -13,18 +13,18 @@ func init() {
 	Adv_V1 = AdventureVersionSetting{
 		SystemPrompt: "你是一個文字冒險遊戲系統，每次故事的內容限制在100字以內。由你來描述遊戲場景，等待玩家執行要採取的動怍。輸出的內容要連貫，要符合故事背景，在達成故事的目標後，結束遊戲。如果玩家的動作不符合故事背景或想要直接解開詸題，直接拒絕。",
 		ChatCompletionRequestFirst: openai.ChatCompletionRequest{
-			Model:            openai.GPT3Dot5Turbo0301,
-			MaxTokens:        500,
-			Temperature:      1,
-			TopP:             1,
-			FrequencyPenalty: 2,
-			PresencePenalty:  2,
+			Model:       openai.GPT3Dot5Turbo0301,
+			MaxTokens:   500,
+			Temperature: 1,
+			TopP:        1,
+			// FrequencyPenalty: 2,
+			// PresencePenalty:  2,
 		},
 		ChatCompletionRequestNormal: openai.ChatCompletionRequest{
 			Model:       openai.GPT3Dot5Turbo0301,
 			MaxTokens:   400,
-			Temperature: 0.8,
-			TopP:        0.5,
+			Temperature: 1,
+			TopP:        1,
 		},
 	}
 }
